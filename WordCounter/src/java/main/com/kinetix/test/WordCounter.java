@@ -1,7 +1,5 @@
 package com.kinetix.test;
 
-import java.util.Optional;
-
 public class WordCounter {
 	StringBuffer wordData = new StringBuffer();
 
@@ -16,7 +14,7 @@ public class WordCounter {
 		}
 		
 		if (status) {
-			if (wordData == null || wordData.equals("")) 
+			if (wordData == null) 
 				wordData.append(word);
 			
 				wordData.append(" ");

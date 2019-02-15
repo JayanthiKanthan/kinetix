@@ -20,11 +20,9 @@ public class ApplictionTest {
 		    wordCounter.addWords("flowergs78789");
 			wordCounter.addWords("florcs");
 			wordCounter.addWords("blue");
-			
-           int wordCount = wordCounter.getWordCount();
-         
-           assertEquals(3, wordCount);
-           System.out.println("WordCount is : "+wordCount);
+			wordCounter.addWords(" ");
+           assertEquals(3, wordCounter.getWordCount());
+           System.out.println("WordCount is : "+wordCounter.getWordCount());
 	    }
 	    
 	    @Test
@@ -34,10 +32,8 @@ public class ApplictionTest {
 		    wordCounter.addWords("flowergs78789");
 			wordCounter.addWords("florcs");
 			wordCounter.addWords("blue");
-			
-           int wordCount = wordCounter.getWordCount();
-         
-           assertEquals(4, wordCount);
-           System.out.println("WordCount is : "+wordCount);
+			wordCounter.addWords(" ");
+           assertEquals(5, wordCounter.getWordCount());
+           System.out.println("WordCount is : "+wordCounter.getWordCount());
 	    }
 }
