@@ -28,7 +28,7 @@ public class ApplictionTest {
 	    }
 	    
 	    @Test
-	    public void wordCountFailurTest()
+	    public void wordCountFailureTest()
 	    {
 		    wordCounter.addWords("flower");
 		    wordCounter.addWords("flowergs78789");
